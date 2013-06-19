@@ -35,6 +35,15 @@ function virtdeploy()
 
 }
 
+function clean()
+{
+	# clean
+	rm -rf ./bin
+	rm -rf ./include
+	rm -rf ./lib
+	rm -rf ./lib64
+}
+
 function usage()
 {
 	cat <<EOF
@@ -46,6 +55,7 @@ EOF
 }
 
 case "$1" in
+	"clean") clean $@;;
 	"deploy") deploy $@;;
 	"virtdeploy") virtdeploy $@;;
 	*) usage;;
