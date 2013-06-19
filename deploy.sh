@@ -33,6 +33,11 @@ function virtdeploy()
 	# enter vitual enviroment
 	source ./bin/activate
 
+	# install jsonlib
+	pip install jsonlib
+
+	# install sqlalchemy
+	pip install sqlalchemy
 }
 
 function clean()
