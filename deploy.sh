@@ -54,8 +54,8 @@ function usage()
 	cat <<EOF
 Usage:
 	# デプロイ
-	sudo ./stiercmd deploy
-	sudo ./stiercmd virtdeploy
+	sudo ./deploy.sh deploy
+	sudo ./deploy.sh virtdeploy
 EOF
 }
 
